@@ -2,7 +2,10 @@ body {
     font-size: 150%;
 }
 
-body, h1, h2, button {
+body,
+h1,
+h2,
+button {
     font-family: 'Gochi Hand', cursive !important;
 }
 
