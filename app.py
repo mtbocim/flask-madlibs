@@ -13,6 +13,7 @@ debug = DebugToolbarExtension(app)
 def show_form_fields():
     """This function updates the questions html to show the appropriate inputs
     needed based on the story text"""
+
     prompts = silly_story.prompts
     return render_template("questions.html", prompts = prompts)
 
@@ -20,6 +21,7 @@ def show_form_fields():
 def show_story():
     """This function collects the form data. Using data, it generates and
     displays the story on the results.html"""
+
     inputs = {}
 
     for prompt in silly_story.prompts:
@@ -30,3 +32,4 @@ def show_story():
 
     return render_template("results.html", story = story)
 
+# inputs = {prompt: request.args[prompt] for prompt in silly_story.prompts}

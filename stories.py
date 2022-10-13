@@ -50,3 +50,7 @@ excited_story = Story(
     ["noun", "verb"],
     """OMG!! OMG!! I love to {verb} a {noun}!"""
 )
+
+sad_story = Story (
+    ["noun", "verb"],"""The sad {noun} was not happy to {verb}."""
+)
