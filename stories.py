@@ -23,7 +23,10 @@ class Story:
 
         self.prompts = words
         self.template = text
-
+    
+    # def __repr__(self):
+    #     return "cat"
+        
     def generate(self, answers):
         """Substitute answers into text."""
 
@@ -54,3 +57,15 @@ excited_story = Story(
 sad_story = Story (
     ["noun", "verb"],"""The sad {noun} was not happy to {verb}."""
 )
+
+sleepy_story = Story(
+    ["noun", "place", "place2"], """The little {noun} didn't want to go 
+    to bed in the {place}. Instead it went to sleep in {place2}, 
+    and had a good night's sleep!"""
+)
+STORY_FORMATS = {
+    "silly":silly_story,
+    "excited":excited_story,
+    "sad":sad_story,
+    "sleepy":sleepy_story
+}
